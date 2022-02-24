@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html',{"title": "Главная"})
+	
+	<body>
+		<!-- Шапка сайта -->
+		@@include('html/header.html',{})
+		
+		<!-- Основной контент -->
+		<main class="main container">
+			<section class="main__content">
+				<h1 class="main__title">Сборка html страницы</h1>
+				<p class="description">Сборка html страницы осуществляется плагином gulp-file-include. Для того чтобы вставить на страницу фрагмент из другого html файла (например содержимое файл head.html), необходимо использовать директиву <b><code>@\@include('html/head.html', {"title": "Главная страница"})</code></b>. В фигурных скобках можно указать несколько переменных, значение которых подставится в вёрстку вызываемого файла. В данном случае у вызываемого файла head.html в теге <b><code>&lt;title&gt;@@title&lt;/title&gt;</code></b> находится имя переменной, вместо которого подставятся слова "Главная страница". В случае если мы будем использовать эту шапку при сборке другой страницы, например при сборке страницы catalog.html то в директиве include мы уже укажем другое значение переменной title. Например { "title": "Каталог" }. И у страницы catalog.html будет <b><code>&lt;title&gt;Каталог&lt;/title&gt;</code></b>
+				</p>
+			</section>
+		</main>
+
+		<!-- Подвал сайта -->
+		@@include('html/footer.html',{})
+		
+		<script src="js/app.min.js"></script>
+	</body>
+</html>

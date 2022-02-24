@@ -1,0 +1,53 @@
+{
+  "name": "my_work",
+  "version": "1.0.0",
+  "description": "first work with gulp",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build",
+    "zip": "gulp deployZIP --build",
+    "ftp": "gulp deployFTP --build",
+    "svgSprive": "gulp svgSprive"
+  },
+  "author": "Syberian",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "del": "^6.0.0",
+    "eslint": "^8.9.0",
+    "eslint-config-htmlacademy": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-ttf2woff2": "^4.0.1",
+    "gulp-util": "^3.0.8",
+    "gulp-version-number": "^0.2.4",
+    "gulp-webp": "^4.0.1",
+    "gulp-webp-html-nosvg": "^1.0.5",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.49.7",
+    "swiper": "^8.0.3",
+    "vinyl-ftp": "^0.6.1",
+    "webp-converter": "2.2.3",
+    "webpack": "^5.68.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-webpcss": "^1.1.1"
+  }
+}

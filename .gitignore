@@ -1,0 +1,21 @@
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы редактора
+.idea
+*.sublime*
+.vscode/
+
+# Вспомогательные файлы
+node_modules/
+npm-debug.log*
+*.log
+*.ai
+*.pdf
+*.psd
+*.rar
+*.zip
+
+# Папка с собранными файлами проекта
+dist/

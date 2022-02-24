@@ -1,0 +1,17 @@
+root: true
+
+parserOptions:
+  ecmaVersion: 2018
+  sourceType: "module"
+
+env:
+  es2017: true
+  browser: true
+
+globals:
+  _: readonly
+  L: readonly
+  noUiSlider: readonly
+
+extends:
+  "htmlacademy/vanilla"
