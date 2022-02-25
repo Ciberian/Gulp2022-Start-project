@@ -3,7 +3,7 @@ import { path } from './gulp/config/path.js'; // Импорт путей
 import { plugins } from './gulp/config/plugins.js'; // Импорт общих плагинов
 
 // Передаем значения в глобальную переменную и добавляем комментарий для eslint:
-/*global global, process*/
+/* global global process*/
 global.app = {
   isBuild: process.argv.includes('--build'),
   isDev: !process.argv.includes('--build'),
