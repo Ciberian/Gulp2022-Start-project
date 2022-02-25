@@ -7,10 +7,10 @@ import browsersync from 'browser-sync'; // Локальный сервер
 
 // Экспортируем объект
 export const plugins = {
-	replace: replace,
-	plumber: plumber,
-	notify: notify,
-	newer: newer,
-	if: ifPlugin,
-	browsersync: browsersync,
+  replace: replace,
+  plumber: plumber,
+  notify: notify,
+  newer: newer,
+  if: ifPlugin,
+  browsersync: browsersync,
 };
